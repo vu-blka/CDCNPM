@@ -13,5 +13,25 @@ namespace CNPM
         {
 
         }
+
+        protected void CheckBoxList_Bang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonTruyVan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonThemHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonXuatBaoCao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
