@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
 
-    <div id="main">
+    <div id="main" style="margin-top: 60px">
         <div class="col-md-3">
             <asp:Panel ID="PanelChonBang" runat="server" Height="200px">
                 <h2>Bảng</h2>
@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-9">
             <div>
-                <asp:Panel ID="PanelTruyVan" runat="server" Height="200px">
+                <asp:Panel ID="PanelTruyVan" runat="server" Height="221px">
                     <div>
                         <div class="col-md-2">
                             <h3>Tựa đề</h3>
@@ -26,7 +26,8 @@
                     </div>
 
                     <div>
-                        <asp:TextBox ID="TextBoxSQL" runat="server" Width="700px" Height="120px" Wrap="true" TextMode="MultiLine"></asp:TextBox>
+                        <br />
+                        <asp:TextBox ID="TextBoxSQL" runat="server" Width="100%" Height="120px" Wrap="true" TextMode="MultiLine"></asp:TextBox>
                         <br><br />
                         &emsp;
                         <asp:Button ID="ButtonThemHang" runat="server" Text="Thêm hàng" OnClick="ButtonThemHang_Click"  />
