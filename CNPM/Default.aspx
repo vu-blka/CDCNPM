@@ -4,7 +4,7 @@
     
 
     <div id="main" style="margin-top: 60px">
-        <div class="col-md-3">
+        <div class="col-md-2">
             <asp:Panel ID="PanelChonBang" runat="server" Height="200px">
                 <h2>Bảng</h2>
                 <br />
@@ -12,7 +12,7 @@
                 <br />
             </asp:Panel>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
             <div>
                 <asp:Panel ID="PanelTruyVan" runat="server" Height="221px">
                     <div>
@@ -23,6 +23,11 @@
                             <br />
                             <asp:TextBox ID="TextBoxTuaDe" runat="server" Width="500px"></asp:TextBox>
                         </div>
+                    </div>
+                    <div style="margin-top: 20px">
+                        <br />
+                        <br />
+                        <asp:Label ID="Error" runat="server" Width="100%" ForeColor="Red" Font-Bold="true"></asp:Label>
                     </div>
 
                     <div>
@@ -51,8 +56,8 @@
                 </asp:Panel>
             </div>
             <br />
-            <div>
-                <asp:Panel ID="PanelThaoTac" runat="server" Height="200px">
+            <div style="margin-top: 50px">
+                <asp:Panel ID="PanelThaoTac" runat="server" Height="400px">
                     <br />
                     <asp:GridView ID="GridView" runat="server" BackColor="White"  BorderColor="#CCCCCC"  BorderWidth="1px" CellPadding="3" HorizontalAlign="Center" Width="925px">
                         <Columns>
@@ -78,6 +83,11 @@
                                        <asp:ListItem Text="Group by" Value="Group by"></asp:ListItem>
                                    </asp:DropDownList>
                                 </ItemTemplate>
+                           </asp:TemplateField>
+                            <asp:TemplateField HeaderText="Rename" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
+                               <ItemTemplate>
+                                   <asp:TextBox ID="TextBox_Rename" runat="server"></asp:TextBox>
+                               </ItemTemplate>
                            </asp:TemplateField>
                            <asp:TemplateField HeaderText="Hiện" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Center">
                                    <ItemTemplate>
