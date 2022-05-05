@@ -418,7 +418,13 @@ namespace CNPM
             //catch (Exception x)
             //{
             //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Câu truy vấn không hợp lệ !')", true);
-            //}
+            String query = TextBoxSQL.Text;
+            String title = TextBoxTuaDe.Text;
+            Session["query"] = query;
+            Session["title"] = title;
+            Response.Redirect("Report.aspx");
+            Server.Execute("Report.aspx");
+        }
         }
     }
 }
