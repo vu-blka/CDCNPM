@@ -38,7 +38,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #7FB5FF; border-color: #7FB5FF">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Tạo báo cáo động</a>
+                    <a class="navbar-brand" runat="server" href="~/" style="color: white">Tạo báo cáo động</a>
                 </div>
                 <div class="navbar-collapse collapse">
                 </div>
@@ -57,7 +57,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>Chuyên đề công nghệ phần mềm - N18DCCN247 - Nguyễn Lương Vũ</p>
+                <p>N18DCCN247 - Nguyễn Lương Vũ</p>
             </footer>
         </div>
 

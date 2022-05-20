@@ -34,24 +34,11 @@
                         <br />
                         <asp:TextBox ID="TextBoxSQL" runat="server" Width="100%" Height="120px" Wrap="true" TextMode="MultiLine"></asp:TextBox>
                         <br><br />
-                        &emsp;
-                        <asp:Button ID="ButtonThemHang" runat="server" Text="Thêm hàng" OnClick="ButtonThemHang_Click"  />
+                        <asp:Button ID="ButtonThemHang" runat="server" Text="Thêm hàng" BackColor="#B4FF9F" BorderColor="#B4FF9F" Height="50px" Width="120px" OnClick="ButtonThemHang_Click"  />
                         &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="ButtonTruyVan" runat="server" Text="TẠO TRUY VẤN" BackColor="#7FB5FF" BorderColor="#7FB5FF" Height="50px" Width="120px" OnClick="ButtonTruyVan_Click"  />
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="ButtonTruyVan" runat="server" Text="TẠO TRUY VẤN" OnClick="ButtonTruyVan_Click"  />
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="ButtonXuatBaoCao" runat="server" Text="XUẤT BÁO CÁO" OnClick="ButtonXuatBaoCao_Click"  />
+                        <asp:Button ID="ButtonXuatBaoCao" runat="server" Text="XUẤT BÁO CÁO" BackColor="#F6FFA4" BorderColor="#F6FFA4" Height="50px" Width="120px" OnClick="ButtonXuatBaoCao_Click"  />
                     </div>
                 </asp:Panel>
             </div>
