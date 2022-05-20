@@ -130,7 +130,7 @@ namespace CNPM
         }
 
 
-        // Copy gridview vào một mảng tạm (2?) chiều 
+        // Copy gridview vào một mảng tạm nhiều chiều 
         protected void CopyGridView()
         {
             tam = new String[sohang, 6];
@@ -264,7 +264,7 @@ namespace CNPM
                 {
                     if (tam[i, 1].Equals("Count") || tam[i, 1].Equals("Sum") || tam[i, 1].Equals("Max") || tam[i, 1].Equals("Min"))
                     {
-                        if (!select.Equals("")) select = select + ", " + tam[i, 1] + "(" + tam[i, 0] + ")"; // chỗ này nếu không có group by hoặc là FK thì sao, bắt lỗi ra sao?
+                        if (!select.Equals("")) select = select + ", " + tam[i, 1] + "(" + tam[i, 0] + ")";                 // chỗ này nếu không có group by hoặc là FK thì sao, bắt lỗi ra sao?
                         else select = tam[i, 1] + "(" + tam[i, 0] + ")";
                         groupByFlag = true;
                         soDongCSMM++;
@@ -393,7 +393,7 @@ namespace CNPM
             GridView.DataBind();
             sohang++;
             load_DropDownList();
-            if (tam != null) PasteGridView();           //?????
+            if (tam != null) PasteGridView();          
         }
 
         protected void ButtonXuatBaoCao_Click(object sender, EventArgs e)
@@ -417,7 +417,7 @@ namespace CNPM
             //}
             //catch (Exception x)
             //{
-            //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Câu truy vấn không hợp lệ !')", true);
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Câu truy vấn không hợp lệ !')", true);
             String query = TextBoxSQL.Text;
             String title = TextBoxTuaDe.Text;
             Session["query"] = query;
